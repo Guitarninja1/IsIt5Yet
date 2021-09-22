@@ -15,3 +15,5 @@ function isIt5Yet() {
   }
 }
 document.addEventListener("DOMContentLoaded", isIt5Yet);
+
+// doing this so i could put it in the pr
