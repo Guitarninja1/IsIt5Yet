@@ -1,25 +1,65 @@
 function isIt5Yet() {
   const now = new Date();
-  const hours = now.getHours();
-  const min = now.getMinutes();
   switch (new Date().getHours()) {
-    default:
-      document.querySelector("#isIt5Yet").textContent =
-        "Have you thought about AA?";
-      break;
     case 0:
-      document.querySelector("#isIt5Yet").textContent = "GO HOME!!!!";
+      document.querySelector("[data-p]").textContent = "GO HOME!!!!";
       break;
     case 1:
-      document.querySelector("#isIt5Yet").textContent =
-        "It's 1am... sleep it off";
+      document.querySelector("[data-p]").textContent =
+        "It's 1am... sleep it off.";
       break;
     case 2:
-      document.querySelector("#isIt5Yet").textContent =
+      document.querySelector("[data-p]").textContent =
         "Seriously... It's 2am now... Get some sleep!";
     case 3:
-      document.querySelector("#isIt5Yet").textContent =
-        "I know Matchbox20 said It's 3am somewhere... that somewhere is here and now, GO TO BED!";
+      document.querySelector("[data-p]").textContent =
+        "Not yet, but I always was told that ghosts are most active right now...";
+      break;
+    case 4:
+      document.querySelector("[data-p]").textContent =
+        "Not even close. Either you work the night shift or you are about to have a really rough day.";
+      break;
+    case 6:
+      document.querySelector("[data-p]").textContent =
+        "Slow your roll. You have 11 hours left buddy.";
+      break;
+    case 7:
+      document.querySelector("[data-p]").textContent =
+        "Lets be honest... we both know it's not 5 yet...";
+      break;
+    case 8:
+      document.querySelector("[data-p]").textContent =
+        "Still a ways to go yet.";
+      break;
+    case 9:
+      document.querySelector("[data-p]").textContent =
+        "Nope. Not yet. Not by a long shot.";
+      break;
+    case 10:
+      document.querySelector("[data-p]").textContent =
+        "Time for second breakfast! Though it's still a while before 5";
+      break;
+    case 11:
+      document.querySelector("[data-p]").textContent =
+        "Nope. But it's almost lunch time!";
+      break;
+    case 12:
+      document.querySelector("[data-p]").textContent =
+        "Not yet, but it is lunch time";
+      break;
+    case 13:
+      document.querySelector("[data-p]").textContent =
+        "Maybe watch a movie or something? Still a ways off yet.";
+      break;
+    case 14:
+      document.querySelector("[data-p]").textContent = "time > 5";
+      break;
+    case 15:
+      document.querySelector("[data-p]").textContent =
+        "Maybe try hamboning for the next 2 hours? You know... to kill time.";
+      break;
+    case 16:
+      document.querySelector("[data-p]").textContent = "Almost There!!!!";
       break;
     case 17:
     case 18:
@@ -28,11 +68,17 @@ function isIt5Yet() {
     case 21:
     case 22:
     case 23:
+      const hours = now.getHours();
+      const min = now.getMinutes();
       document.querySelector(
-        "#isIt5Yet"
+        "[data-p]"
       ).textContent = `Drink up me hartys YO HO! You could have been drinking for ${
         hours - 17
       } hours and ${min} minutes.`;
+      break;
+    default:
+      document.querySelector("[data-p]").textContent =
+        "Have you thought about AA?";
       break;
   }
 }
