@@ -1,6 +1,4 @@
 function hideDiv() {
-  switch (new Date().getHours()) {
-  }
   document.querySelector("[data-aa]").setAttribute("hidden", true);
 }
 function showDiv() {
